@@ -1,0 +1,190 @@
+.ce-chat-title-container {
+  background: #f4f4f4;
+}
+.ce-chat-title-text {
+  color: black;
+  font-size: 20px;
+  /* font-size: x-large; */
+  font-weight: 400;
+  font-family: system-ui;
+}
+.ce-chat-subtitle-text {
+  color: grey;
+}
+.ce-chat-feed-container {
+  background-image: url("https://tse2.mm.bing.net/th?id=OIP.IRplf3IM9zjWpx_IQyeVLAHaN2&pid=Api&P=0&w=89&h=167");
+}
+.ce-message-date-text {
+  display: none;
+}
+.ce-chat-card {
+  border-bottom: 1px solid #e2e2e2;
+}
+.ce-active-chat-card {
+  background: grey;
+  border-radius: 0px !important;
+}
+#ce-send-message-button {
+  margin-right: 3px;
+  margin-top: -9px;
+  padding: 5px 9px 5px 9px !important;
+}
+#ce-send-message-button span {
+  transform: rotate(90deg);
+}
+.anticon svg {
+  font-size: 25px;
+}
+/* #ce-send-button-container {
+  position: relative !important;
+}
+#msg-form-container {
+  position: relative !important;
+} */
+.ql-bold,
+.ql-italic,
+.ql-strike,
+.ql-code,
+.ql-underline,
+.ql-link {
+  display: none !important;
+}
+.ce-quill-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.quill {
+  width: 80% !important;
+  border: none !important;
+}
+
+.ql-container.ql-snow {
+  width: 100% !important;
+  border: none !important;
+}
+
+#toolbar {
+  width: 20%;
+  border: none !important;
+}
+
+/* FORM STYLES */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62, 5%;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: rgb(117, 84, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(117, 84, 160, 1) 7%,
+    rgba(117, 84, 160, 1) 17%,
+    rgba(106, 95, 168, 1) 29%,
+    rgba(99, 103, 174, 1) 44%,
+    rgba(87, 116, 184, 1) 66%,
+    rgba(70, 135, 198, 1) 83%,
+    rgba(44, 163, 219, 1) 96%,
+    rgba(22, 188, 237, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.form {
+  width: 400px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 2.3em;
+}
+
+.button {
+  border-radius: 4px;
+  border: none;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  width: 90%;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.error {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 660px) {
+  .quill {
+    width: 75% !important;
+  }
+  #toolbar {
+    width: 25% !important;
+  }
+  .anticon svg {
+    font-size: 20px;
+  }
+  #ce-send-message-button {
+    margin-right: 10px;
+    margin-top: -7px;
+  }
+}
