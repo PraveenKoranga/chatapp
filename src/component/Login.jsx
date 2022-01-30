@@ -17,7 +17,10 @@ const Login = () => {
 
     try {
       await axios.get("https://api.chatengine.io/chats", {
-        headers: authObject,
+        headers: {
+          authObject,
+          "Access-Control-Allow-Origin": "Content-type",
+        },
       });
 
       localStorage.setItem("username", username);
